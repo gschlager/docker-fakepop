@@ -20,7 +20,7 @@ Docker image for [fakepop](https://packages.debian.org/jessie/fakepop).
 
 * Run *fakepop* by mounting your email directory. It will run as daemon in the background.
   ```bash
-  docker run --rm -d --name fakepop -v ${PWD}:/etc/fakepop -p 127.0.0.1:110:110 fakepop
+  docker run --rm -d --name fakepop -v ${PWD}:/etc/fakepop -p 127.0.0.1:110:110 gschlager/fakepop
   ```
 
 * You can stop the daemon with
