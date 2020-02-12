@@ -35,3 +35,16 @@ Docker image for [fakepop](https://packages.debian.org/jessie/fakepop).
 * **Username**: whatever you want
 * **Password**: whatever you want
 * **Connection security**: None
+
+### Connecting from Discourse
+You can connect from Discourse by changing the following site settings:
+* disable `pop3_polling_ssl`
+* disable `pop3_polling_openssl_verify`
+* `pop3_polling_host`: localhost
+* `pop3_polling_port`: 110
+* `pop3 polling username`: whatever you want
+* `pop3 polling password`: whatever you want
+* enable `pop3_polling_enabled`
+* enable `email_in`
+
+Then create a group or category and configure an email address for it.
